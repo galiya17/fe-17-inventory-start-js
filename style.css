@@ -196,7 +196,9 @@ select:is(:hover, :focus) {
 .product-item{
   margin-bottom: 30px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: calc(10px + (30 - 10) * ((100vw - 375px) / (1280 - 375)));
 
   align-items: center;
 }
